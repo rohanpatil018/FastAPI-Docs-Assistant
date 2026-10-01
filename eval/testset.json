@@ -1,0 +1,202 @@
+[
+  {
+    "question": "How should required scopes be formatted in the `WWW-Authenticate` header when handling authentication errors?",
+    "gold_chunk_id": 217,
+    "gold_source": "advanced\\security\\oauth2-scopes.md"
+  },
+  {
+    "question": "Are OAuth2 scopes strictly required for handling authorization in an API?",
+    "gold_chunk_id": 208,
+    "gold_source": "advanced\\security\\oauth2-scopes.md"
+  },
+  {
+    "question": "How can you manually configure the entry point for a FastAPI application if automatic detection fails?",
+    "gold_chunk_id": 496,
+    "gold_source": "editor-support.md"
+  },
+  {
+    "question": "What underlying libraries is SQLModel built on?",
+    "gold_chunk_id": 2393,
+    "gold_source": "tutorial\\sql-databases.md"
+  },
+  {
+    "question": "How does middleware process incoming requests and outgoing responses in FastAPI?",
+    "gold_chunk_id": 2197,
+    "gold_source": "tutorial\\middleware.md"
+  },
+  {
+    "question": "How do you add tags to a path operation in FastAPI?",
+    "gold_chunk_id": 2204,
+    "gold_source": "tutorial\\path-operation-configuration.md"
+  },
+  {
+    "question": "Can you add path operations directly to the main FastAPI application alongside included routers?",
+    "gold_chunk_id": 1979,
+    "gold_source": "tutorial\\bigger-applications.md"
+  },
+  {
+    "question": "What is a process in an operating system?",
+    "gold_chunk_id": 372,
+    "gold_source": "deployment\\concepts.md"
+  },
+  {
+    "question": "What import string should be used to reference a FastAPI application instance inside a `main.py` file?",
+    "gold_chunk_id": 478,
+    "gold_source": "deployment\\server-workers.md"
+  },
+  {
+    "question": "Which package is needed to use ORJSONResponse in FastAPI?",
+    "gold_chunk_id": 658,
+    "gold_source": "index.md"
+  },
+  {
+    "question": "Why is Starlette slightly slower in performance than Uvicorn?",
+    "gold_chunk_id": 360,
+    "gold_source": "benchmarks.md"
+  },
+  {
+    "question": "How can you install FastAPI using uv without including the optional standard dependencies?",
+    "gold_chunk_id": 656,
+    "gold_source": "index.md"
+  },
+  {
+    "question": "What TLS extension allows a server to host multiple domain certificates on a single IP address?",
+    "gold_chunk_id": 442,
+    "gold_source": "deployment\\https.md"
+  },
+  {
+    "question": "How can you partially update a Pydantic model instance using the `model_copy()` method?",
+    "gold_chunk_id": 2011,
+    "gold_source": "tutorial\\body-updates.md"
+  },
+  {
+    "question": "How does running multiple worker processes affect a server's total RAM consumption?",
+    "gold_chunk_id": 385,
+    "gold_source": "deployment\\concepts.md"
+  },
+  {
+    "question": "Which attribute of the callback router do I hand to the callbacks parameter of a path operation decorator?",
+    "gold_chunk_id": 154,
+    "gold_source": "advanced\\openapi-callbacks.md"
+  },
+  {
+    "question": "Why does FastAPI treat a query parameter typed as str | None with a default of None as not required?",
+    "gold_chunk_id": 2236,
+    "gold_source": "tutorial\\query-params-str-validations.md"
+  },
+  {
+    "question": "Why shouldn't I run my server with the reload flag in production?",
+    "gold_chunk_id": 474,
+    "gold_source": "deployment\\manually.md"
+  },
+  {
+    "question": "How can I stop the OpenAPI schema from being regenerated every time someone opens the docs?",
+    "gold_chunk_id": 584,
+    "gold_source": "how-to\\extending-openapi.md"
+  },
+  {
+    "question": "In a test, how do I send form data rather than a JSON body?",
+    "gold_chunk_id": 2432,
+    "gold_source": "tutorial\\testing.md"
+  },
+  {
+    "question": "Who normally takes care of HTTPS when a FastAPI app runs inside a container?",
+    "gold_chunk_id": 420,
+    "gold_source": "deployment\\docker.md"
+  },
+  {
+    "question": "Where do I import Field from when adding validation inside a Pydantic model?",
+    "gold_chunk_id": 1985,
+    "gold_source": "tutorial\\body-fields.md"
+  },
+  {
+    "question": "Can my response model be a list of Pydantic models instead of a single one?",
+    "gold_chunk_id": 2291,
+    "gold_source": "tutorial\\response-model.md"
+  },
+  {
+    "question": "What do reverse proxies add to a request before passing it to my app so it knows the original URL?",
+    "gold_chunk_id": 60,
+    "gold_source": "advanced\\behind-a-proxy.md"
+  },
+  {
+    "question": "Is there any real difference between importing responses from fastapi.responses and from starlette.responses?",
+    "gold_chunk_id": 188,
+    "gold_source": "advanced\\response-cookies.md"
+  },
+  {
+    "question": "When documenting webhooks, who is responsible for registering URLs and actually sending the requests?",
+    "gold_chunk_id": 156,
+    "gold_source": "advanced\\openapi-webhooks.md"
+  },
+  {
+    "question": "What options does the scope argument of Depends accept, and what does the function option do?",
+    "gold_chunk_id": 2074,
+    "gold_source": "tutorial\\dependencies\\dependencies-with-yield.md"
+  },
+  {
+    "question": "How many levels deep can dependencies that depend on other dependencies go?",
+    "gold_chunk_id": 2097,
+    "gold_source": "tutorial\\dependencies\\sub-dependencies.md"
+  },
+  {
+    "question": "Can I use a single BackgroundTask object on its own in FastAPI, and what would I have to do?",
+    "gold_chunk_id": 1953,
+    "gold_source": "tutorial\\background-tasks.md"
+  },
+  {
+    "question": "When does the part of a lifespan function that comes before the yield get executed?",
+    "gold_chunk_id": 111,
+    "gold_source": "advanced\\events.md"
+  },
+  {
+    "question": "What happens to the documentation of a response when its response class has no media type?",
+    "gold_chunk_id": 85,
+    "gold_source": "advanced\\custom-response.md"
+  },
+  {
+    "question": "What is the tokenUrl argument of OAuth2PasswordBearer for?",
+    "gold_chunk_id": 2338,
+    "gold_source": "tutorial\\security\\first-steps.md"
+  },
+  {
+    "question": "What status code does FastAPI send back if the Authorization header is missing or isn't a Bearer token?",
+    "gold_chunk_id": 2342,
+    "gold_source": "tutorial\\security\\first-steps.md"
+  },
+  {
+    "question": "Why do I have to explicitly allow origins, methods or headers when using CORSMiddleware?",
+    "gold_chunk_id": 2036,
+    "gold_source": "tutorial\\cors.md"
+  },
+  {
+    "question": "Does the order of the tag descriptions I define change how tags are shown in the docs UI?",
+    "gold_chunk_id": 2195,
+    "gold_source": "tutorial\\metadata.md"
+  },
+  {
+    "question": "Can I write a path operation's description in the function docstring and use Markdown there?",
+    "gold_chunk_id": 2206,
+    "gold_source": "tutorial\\path-operation-configuration.md"
+  },
+  {
+    "question": "When would I want one shared schema for both the input and the output of a model?",
+    "gold_chunk_id": 612,
+    "gold_source": "how-to\\separate-openapi-schemas.md"
+  },
+  {
+    "question": "Why do I need Pydantic v2 if I want to run on the newest Python versions?",
+    "gold_chunk_id": 598,
+    "gold_source": "how-to\\migrate-from-pydantic-v1-to-pydantic-v2.md"
+  },
+  {
+    "question": "Can a request body be an arbitrary dictionary with keys of some type instead of a model?",
+    "gold_chunk_id": 2005,
+    "gold_source": "tutorial\\body-nested-models.md"
+  },
+  {
+    "question": "How does FastAPI's speed compare with NodeJS frameworks and with Go?",
+    "gold_chunk_id": 341,
+    "gold_source": "async.md"
+  }
+]
