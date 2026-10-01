@@ -1,0 +1,598 @@
+[
+ {
+  "text": "How do I add authentication to my FastAPI app?",
+  "label": "retrieve"
+ },
+ {
+  "text": "what is dependency injection in fastapi",
+  "label": "retrieve"
+ },
+ {
+  "text": "How can I run FastAPI with multiple workers?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Explain path parameters versus query parameters",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I return a custom status code from a path operation?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What does response_model do?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I handle file uploads?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How can I serve static files?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I use Jinja2 templates with FastAPI?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I add custom headers to a response?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What's the best way to structure a larger FastAPI project across multiple files?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I handle exceptions and return custom error responses?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How can I validate the maximum length of a query parameter?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I declare a request body with Pydantic?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I enable CORS?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Does FastAPI support WebSockets?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I write tests for my endpoints?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I run code at startup and shutdown?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I deploy FastAPI with Docker?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What is the difference between async def and def for path operations?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I set cookies in a response?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I read headers from a request?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I use OAuth2 with the password flow and JWT tokens?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I add a description and summary to an endpoint in the docs?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I customize the Swagger UI?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I disable the interactive docs in production?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I stream a large response?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I use environment variables and settings?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How can I add middleware that times every request?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I declare optional fields with default values in a body model?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Can I use SQLModel with FastAPI to talk to a database?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What is APIRouter used for?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I redirect a request to another URL?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I return HTML instead of JSON?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Why am I getting a 422 Unprocessable Entity error?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I restrict a path parameter to predefined values with an Enum?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I accept form data instead of JSON?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How can I run a task in the background after returning a response?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I version my API?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I apply a dependency to all routes of a router?",
+  "label": "retrieve"
+ },
+ {
+  "text": "what is uvicorn and why do i need it",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I install FastAPI?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I generate a client SDK from the OpenAPI schema?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I mount a sub-application?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I handle HTTPS and certificates?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I use Pydantic v2 with FastAPI?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I upload multiple files at once?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I set the response status code to 201 when creating an item?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I add examples to the request body schema?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I read the raw request body?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Query default value of None is not working",
+  "label": "retrieve"
+ },
+ {
+  "text": "what is an openapi schema",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I deal with trailing slashes in routes?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How can I run FastAPI behind a reverse proxy with a path prefix?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I define a dependency with yield for database sessions?",
+  "label": "retrieve"
+ },
+ {
+  "text": "fastapi cors middleware allow_origins",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I use security scopes?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I add pagination parameters to a list endpoint?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I send a file and form fields in the same request?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What Python versions does FastAPI support?",
+  "label": "retrieve"
+ },
+ {
+  "text": "hi",
+  "label": "chitchat"
+ },
+ {
+  "text": "hello",
+  "label": "chitchat"
+ },
+ {
+  "text": "hey there",
+  "label": "chitchat"
+ },
+ {
+  "text": "good morning",
+  "label": "chitchat"
+ },
+ {
+  "text": "good evening",
+  "label": "chitchat"
+ },
+ {
+  "text": "how are you?",
+  "label": "chitchat"
+ },
+ {
+  "text": "what's up",
+  "label": "chitchat"
+ },
+ {
+  "text": "thanks",
+  "label": "chitchat"
+ },
+ {
+  "text": "thank you so much",
+  "label": "chitchat"
+ },
+ {
+  "text": "thanks a lot!",
+  "label": "chitchat"
+ },
+ {
+  "text": "that helps",
+  "label": "chitchat"
+ },
+ {
+  "text": "great",
+  "label": "chitchat"
+ },
+ {
+  "text": "awesome",
+  "label": "chitchat"
+ },
+ {
+  "text": "ok cool",
+  "label": "chitchat"
+ },
+ {
+  "text": "got it",
+  "label": "chitchat"
+ },
+ {
+  "text": "who are you?",
+  "label": "chitchat"
+ },
+ {
+  "text": "what can you do?",
+  "label": "chitchat"
+ },
+ {
+  "text": "what's your name?",
+  "label": "chitchat"
+ },
+ {
+  "text": "are you a bot?",
+  "label": "chitchat"
+ },
+ {
+  "text": "who made you?",
+  "label": "chitchat"
+ },
+ {
+  "text": "tell me about yourself",
+  "label": "chitchat"
+ },
+ {
+  "text": "bye",
+  "label": "chitchat"
+ },
+ {
+  "text": "goodbye",
+  "label": "chitchat"
+ },
+ {
+  "text": "see you later",
+  "label": "chitchat"
+ },
+ {
+  "text": "have a nice day",
+  "label": "chitchat"
+ },
+ {
+  "text": "nice to meet you",
+  "label": "chitchat"
+ },
+ {
+  "text": "can you help me?",
+  "label": "chitchat"
+ },
+ {
+  "text": "i need some help",
+  "label": "chitchat"
+ },
+ {
+  "text": "hello assistant",
+  "label": "chitchat"
+ },
+ {
+  "text": "lol",
+  "label": "chitchat"
+ },
+ {
+  "text": "haha that's funny",
+  "label": "chitchat"
+ },
+ {
+  "text": "you're awesome",
+  "label": "chitchat"
+ },
+ {
+  "text": "nevermind",
+  "label": "chitchat"
+ },
+ {
+  "text": "never mind",
+  "label": "chitchat"
+ },
+ {
+  "text": "ok thanks bye",
+  "label": "chitchat"
+ },
+ {
+  "text": "sorry",
+  "label": "chitchat"
+ },
+ {
+  "text": "my bad",
+  "label": "chitchat"
+ },
+ {
+  "text": "can we start over?",
+  "label": "chitchat"
+ },
+ {
+  "text": "are you there?",
+  "label": "chitchat"
+ },
+ {
+  "text": "yo",
+  "label": "chitchat"
+ },
+ {
+  "text": "howdy",
+  "label": "chitchat"
+ },
+ {
+  "text": "good night",
+  "label": "chitchat"
+ },
+ {
+  "text": "cheers",
+  "label": "chitchat"
+ },
+ {
+  "text": "appreciate it",
+  "label": "chitchat"
+ },
+ {
+  "text": "that was helpful",
+  "label": "chitchat"
+ },
+ {
+  "text": "What is the capital of France?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Who won the cricket world cup?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Give me a recipe for pasta carbonara",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What's the weather in Pune today?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I fix a Django migration error?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I set up routing in Flask?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Explain how React hooks work",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What is the stock price of Tesla?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Write me a poem about the ocean",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "how many calories are in a banana",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Tell me a joke",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I train a neural network in PyTorch?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What's the best laptop under 50000 rupees?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Translate good morning into Spanish",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Who is the prime minister of India?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "how do I lose weight fast",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Explain quantum entanglement",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I center a div in CSS?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What time is it in Tokyo?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Recommend a good movie to watch tonight",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I use Express.js middleware?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Summarize the plot of Inception",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What is the meaning of life?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "how to invest in mutual funds",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I write a SQL query that joins three tables?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I learn guitar quickly?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Explain the French revolution",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What's 245 times 38?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Which phone has the best camera?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I write a resume for a software job?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What are the symptoms of the flu?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "how do I install Ubuntu on my laptop",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Explain how blockchains work",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "how to bake a chocolate cake",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Write a Python function to reverse a linked list",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Explain big O notation",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I use pandas groupby?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What's the difference between TCP and UDP?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Who painted the Mona Lisa?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "how to prepare for a campus placement interview",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I use git rebase?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "What is the best way to learn machine learning?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "How do I build an Android app with Kotlin?",
+  "label": "out_of_scope"
+ },
+ {
+  "text": "Explain Spring Boot dependency injection",
+  "label": "out_of_scope"
+ }
+]

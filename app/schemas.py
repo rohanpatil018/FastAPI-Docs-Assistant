@@ -7,7 +7,7 @@ Mode = Literal["dense", "bm25", "hybrid", "hybrid_rerank"]
 
 class QueryRequest(BaseModel):
     question: str = Field(min_length=1, max_length=2000)
-    mode: Mode = "hybrid"
+    mode: Mode = "hybrid_rerank"
     top_k: int = Field(default=5, ge=1, le=20)
 
 
@@ -25,3 +25,5 @@ class RetrieveResponse(BaseModel):
 
 class QueryResponse(RetrieveResponse):
     answer: str
+    route: str = "retrieve"
+    route_confidence: float | None = None
