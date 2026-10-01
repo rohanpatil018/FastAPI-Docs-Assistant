@@ -10,8 +10,7 @@ from pathlib import Path
 from app.retrieve import Retriever
 
 K = 10
-MODES = ["dense", "bm25", "hybrid", "hybrid_rerank@10", "hybrid_rerank"]
-
+MODES = ["dense", "bm25", "hybrid", "hybrid_rerank@5", "hybrid_rerank@10", "hybrid_rerank"]
 
 def evaluate(retriever: Retriever, testset: list[dict], mode: str) -> dict:
     hit1 = hit5 = src_hit5 = 0
@@ -45,7 +44,7 @@ def evaluate(retriever: Retriever, testset: list[dict], mode: str) -> dict:
 def main() -> None:
     testset = json.loads(Path("eval/testset.json").read_text(encoding="utf-8"))
     retriever = Retriever()
-    retriever.retrieve("warm up", "hybrid", 1)  # keep model load out of the timings
+    retriever.retrieve("warm up", "hybrid_rerank@10", 1)
     rows = [evaluate(retriever, testset, m) for m in MODES]
     Path("eval/results.json").write_text(json.dumps(rows, indent=2), encoding="utf-8")
 
