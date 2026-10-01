@@ -63,10 +63,10 @@ Interactive docs at `/docs` once the server is running.
 ## Run it
 
 ```bash
-git clone <repo-url> && cd <repo-name>
-python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+git clone https://github.com/rohanpatil018/RAG-Project.git
+python -m venv .venv && source .venv/bin/activate  
 pip install -r requirements.txt
-cp .env.example .env                                  # add GOOGLE_API_KEY
+cp .env.example .env                                  # add GOOGLE_API_KE
 ```
 
 Get the corpus (FastAPI docs) into `data/docs/`:
