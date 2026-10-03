@@ -1,8 +1,10 @@
 import os
 import time
 from contextlib import asynccontextmanager
+from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
+from fastapi.staticfiles import StaticFiles
 
 from app.config import settings
 from app.generate import Generator
@@ -95,3 +97,11 @@ def query(req: QueryRequest):
 
 def _ms(t0: float) -> float:
     return round((time.perf_counter() - t0) * 1000, 1)
+
+
+# Serve the chat UI at / (registered last so the API routes keep priority)
+app.mount(
+    "/",
+    StaticFiles(directory=Path(__file__).parent / "static", html=True),
+    name="static",
+)

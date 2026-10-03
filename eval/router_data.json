@@ -594,5 +594,45 @@
  {
   "text": "Explain Spring Boot dependency injection",
   "label": "out_of_scope"
+ },
+ {
+  "text": "Is there a way to share common logic between several endpoints?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I make a function run before every request handler?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I protect certain routes so only logged-in users can reach them?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What's the right way to organize routes into separate modules?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I control which fields are returned to the client?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Is there a way to keep secrets like database URLs out of my code?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I show a nicer error message when validation fails?",
+  "label": "retrieve"
+ },
+ {
+  "text": "Can I reuse the same parameters across many endpoints?",
+  "label": "retrieve"
+ },
+ {
+  "text": "What happens when two endpoints match the same URL?",
+  "label": "retrieve"
+ },
+ {
+  "text": "How do I make the automatic docs show my own title and version?",
+  "label": "retrieve"
  }
 ]
