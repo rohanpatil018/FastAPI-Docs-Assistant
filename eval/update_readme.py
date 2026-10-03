@@ -11,7 +11,7 @@ LABELS = {
     "dense": "Dense (bge-small)",
     "bm25": "BM25",
     "hybrid": "Hybrid (RRF)",
-    "hybrid_rerank": "Hybrid + rerank (default pool)",
+    "hybrid_rerank": "Hybrid + rerank (serving default)",
 }
 
 

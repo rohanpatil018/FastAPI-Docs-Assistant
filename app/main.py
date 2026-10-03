@@ -1,9 +1,10 @@
 import os
 import time
+from collections import defaultdict, deque
 from contextlib import asynccontextmanager
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException, Request
 from fastapi.staticfiles import StaticFiles
 
 from app.config import settings
@@ -13,6 +14,24 @@ from app.router_model import ROUTER_PATH, QueryRouter
 from app.schemas import QueryRequest, QueryResponse, RetrieveResponse
 
 state: dict = {}
+
+# Simple in-memory per-IP rate limit, so a public demo can't burn the Gemini quota.
+RATE_LIMIT = int(os.getenv("RATE_LIMIT_PER_MIN", "10"))
+_hits: dict[str, deque] = defaultdict(deque)
+
+
+def rate_limit(request: Request) -> None:
+    forwarded = request.headers.get("x-forwarded-for")  # set by the hosting proxy
+    ip = forwarded.split(",")[0].strip() if forwarded else (
+        request.client.host if request.client else "unknown"
+    )
+    now = time.time()
+    hits = _hits[ip]
+    while hits and now - hits[0] > 60:
+        hits.popleft()
+    if len(hits) >= RATE_LIMIT:
+        raise HTTPException(429, "Too many requests. Please wait a minute and try again.")
+    hits.append(now)
 
 CHITCHAT_REPLY = (
     "Hi! I answer questions about the FastAPI documentation. "
@@ -50,14 +69,14 @@ def health():
     }
 
 
-@app.post("/retrieve", response_model=RetrieveResponse)
+@app.post("/retrieve", response_model=RetrieveResponse, dependencies=[Depends(rate_limit)])
 def retrieve(req: QueryRequest):
     t0 = time.perf_counter()
     sources = state["retriever"].retrieve(req.question, req.mode, req.top_k)
     return {"sources": sources, "latency_ms": {"retrieval": _ms(t0)}}
 
 
-@app.post("/query", response_model=QueryResponse)
+@app.post("/query", response_model=QueryResponse, dependencies=[Depends(rate_limit)])
 def query(req: QueryRequest):
     t0 = time.perf_counter()
 

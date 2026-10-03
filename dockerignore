@@ -1,0 +1,9 @@
+.git
+.venv
+__pycache__
+*.pyc
+.env
+storage
+data
+tmp_fastapi
+test_embed.py

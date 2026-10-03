@@ -65,6 +65,8 @@ class Retriever:
         if mode == "bm25":
             return self.sparse(query, k)
         if mode.startswith("hybrid_rerank"):
-            n = int(mode.split("@")[1]) if "@" in mode else settings.candidate_k
+            # "hybrid_rerank@N" scores N candidates (used by the eval sweep);
+            # plain "hybrid_rerank" uses settings.rerank_candidates.
+            n = int(mode.split("@")[1]) if "@" in mode else settings.rerank_candidates
             return self.rerank(query, self.hybrid(query, n), k)
         return self.hybrid(query, k)
