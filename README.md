@@ -143,8 +143,8 @@ once the server is running.
 ### 1. Clone the repository
 
 ```bash
-git clone <repo-url>
-cd <repo-name>
+git clone https://github.com/rohanpatil018/FastAPI-Docs-Assistant.git
+cd FastAPI-Docs-Assistant
 ```
 
 ### 2. Create a virtual environment
